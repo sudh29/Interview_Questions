@@ -70,6 +70,20 @@ except MyError as error:
     other hand brings the copy of the remote directory changes into 
     the local repository.'''
 
+# git pull = git fetch + git merge
+
+''' git pull and git rebase are not interchangeable, but they are closely
+    connected. git pull fetches the latest changes of the current branch 
+    from a remote and applies those changes to your local copy of the branch.
+    Generally this is done by merging, i.e. the local changes are merged
+    into the remote changes. So git pull is similar to git fetch & git merge.
+    
+    Rebasing is an alternative to merging. Instead of creating a new commit 
+    that combines the two branches, it moves the commits of one of the branches
+    on top of the other.You can pull using rebase instead of merge (git pull --rebase).
+    The local changes you made will be rebased on top of the remote changes, 
+    instead of being merged with the remote changes.'''
+
 
 
 
