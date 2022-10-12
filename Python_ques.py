@@ -84,8 +84,11 @@ except MyError as error:
     The local changes you made will be rebased on top of the remote changes, 
     instead of being merged with the remote changes.'''
 
+# OS version check linux command
+# lsb_release -a
 
-
+# CPU details linux command
+# lscpu
 
 
 
