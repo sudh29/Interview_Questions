@@ -95,7 +95,10 @@ except MyError as error:
 The Python dict string uses single quotation marks, and JSON enforces double quotation marks. 
 You can nest tuple in Python dict.
 JSON dictionary must have a time complexity of O(n)
-Python dictionary, and now finding a key has a time complexity of O(1)'''
+Python dictionary, and now finding a key has a time complexity of O(1)
+JSON is a data format (a string), Python dictionary is a data structure (in-memory object).
+If you need to exchange data between different (perhaps even non-Python) processes then you could use JSON format to serialize your Python dictionary.
+'''
 
 
 
