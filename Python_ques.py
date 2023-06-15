@@ -146,7 +146,33 @@ They behave like plain functions except that you can call them from an instance 
 a.static_foo(1)
 A.static_foo('hi')
     
+class Parent(object):  
+   # Constructor
+   def __init__(self, name):
+       self.name = name
+   def display(self):
+      print("Parent.name, self.age")
 
+class Parent2(object):  
+   # Constructor
+   def __init__(self, val):
+       self.val = val
+   def display(self):
+       print("Parent2.name, self.age")
+
+class Child(Parent,Parent2): 
+   # Constructor
+   def __init__(self, name, age,val):
+       Parent.name = name
+       Parent2.val = val
+       self.age = age
+
+#   def display(self):
+#       print(Parent.name, self.age)
+
+# Driver Code
+obj = Child("Interviewbit", 6,15)
+obj.display()
 
 
 
