@@ -174,9 +174,21 @@ class Child(Parent,Parent2):
 obj = Child("Interviewbit", 6,15)
 obj.display()
 
+''' In Python, the nonlocal keyword is used to indicate that a variable being referenced and modified
+within a nested function is not local to that nested function but rather to an outer enclosing function. '''
 
+def outer_function():
+    x = 10  # Local variable in outer_function
 
+    def inner_function():
+        nonlocal x  # Referring to the x variable in the outer scope
+        x += 5
+        print("Value of x inside inner_function:", x)
 
+    inner_function()
+    print("Value of x after inner_function:", x)
+
+outer_function()
 
 
 
