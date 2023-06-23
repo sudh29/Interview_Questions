@@ -176,6 +176,9 @@ obj.display()
 
 ''' In Python, the nonlocal keyword is used to indicate that a variable being referenced and modified
 within a nested function is not local to that nested function but rather to an outer enclosing function. '''
+'''
+"nonlocal" is used to declare a variable in a nested function that is not local to the function but is also not a global variable in Python.
+'''
 
 def outer_function():
     x = 10  # Local variable in outer_function
