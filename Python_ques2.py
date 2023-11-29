@@ -44,7 +44,12 @@ def find_val(dic_val, target):
 (find_val(d, inp1.split('.')))
 (find_val(d, inp2.split('.')))
 
-
+def print_nested_dict_values(dictionary):
+    for key, value in dictionary.items():
+        if isinstance(value, dict):
+            print_nested_dict_values(value)
+        else:
+            print(value)
 
 
 import pandas as pd
