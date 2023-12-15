@@ -68,4 +68,4 @@ Feel free to contribute by adding more questions, improving answers, or suggesti
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+
