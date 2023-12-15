@@ -13,10 +13,15 @@ Think of a box of animal toys. Once you close the box, you don't need to change 
 
 Imagine you have a bunch of toy cars, and you can make them go forward by pushing a button. Now, let's say you have a big toy truck. According to the Liskov Substitution Principle, you should be able to use the truck in place of a car without causing any problems.
 Here's how it works:
+
 ### Using a Car:
+
 When you push the button on a toy car, it goes forward. You expect this from all your cars.
+
 ### Using a Truck (Applying LSP):
+
 Now, according to LSP, if you replace the car with a truck, pressing the same button should make the truck go forward as well. The truck should behave just like the car in this situation.
+
 So, in simpler terms, the Liskov Substitution Principle says that you should be able to substitute a parent class object with an object of its child class without affecting the correctness of your program.
 In our toy example, the truck can be substituted for the car because it can perform the same action (going forward with the button). This principle helps make our code more flexible and allows us to use different kinds of toys in the same situations without unexpected issues.
 
