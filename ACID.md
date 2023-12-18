@@ -1,5 +1,5 @@
 
-# ACID Principles Explained for 5-Year-Olds
+# ACID Principles Explained 
 
 Imagine you're baking cookies with your friend. Let's break down the ACID principles to understand how they relate to our baking adventure:
 
