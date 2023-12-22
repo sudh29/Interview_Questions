@@ -53,6 +53,14 @@ Inheritance: If a class defines __slots__, it affects only instances of that cla
 
 Readability vs. Flexibility: While __slots__ can optimize memory usage, it may reduce the flexibility of your classes. Use it judiciously, considering the trade-offs in terms of memory usage and ease of development.
 
+# How does garbage collection happen in python?
+
+Garbage collection in Python is the process by which the interpreter automatically reclaims memory that is no longer in use by the program. Python employs a garbage collector to manage memory and avoid memory leaks. The primary mechanism for garbage collection in Python is based on a technique called **reference counting, along with a **cycle detector to handle reference cycles.
+
+Here's an overview of how garbage collection works in Python:
+
+
+
 
 
 
