@@ -111,9 +111,9 @@ Serialization is employed to save and restore the state of an application or pro
 When integrating Python with other programming languages, or when building systems using multiple languages, serialization provides a common mechanism for representing and exchanging data.
 
 8. Popular serialization formats in Python include:
-JSON (JavaScript Object Notation): A lightweight and human-readable data interchange format.
-XML (eXtensible Markup Language): A markup language for encoding documents in a format that is both human-readable and machine-readable.
-Pickle: A Python-specific binary serialization format for efficiently storing and reconstructing Python objects.
+   - JSON (JavaScript Object Notation): A lightweight and human-readable data interchange format.
+   - XML (eXtensible Markup Language): A markup language for encoding documents in a format that is both human-readable and machine-readable.
+   - Pickle: A Python-specific binary serialization format for efficiently storing and reconstructing Python objects.
 
 
 Overall, serialization plays a crucial role in enabling data interchange, persistence, and communication between different components, systems, or programming languages.
