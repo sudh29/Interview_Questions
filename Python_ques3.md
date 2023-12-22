@@ -59,33 +59,29 @@ Garbage collection in Python is the process by which the interpreter automatical
 
 Here's an overview of how garbage collection works in Python:
 
-!. Reference Counting:
-
+1. Reference Counting:
 Python uses a simple and efficient strategy called reference counting to keep track of the number of references to an object.
 Each object has a reference count, and when the count drops to zero, it means the object is no longer accessible and can be safely deallocated.
 
 2. Cycle Detector:
-
 While reference counting is effective for most situations, it may not handle circular references (reference cycles) where a group of objects reference each other, creating a cycle.
 To address this, Python includes a cycle detector that identifies and breaks reference cycles, allowing the garbage collector to reclaim memory even in the presence of circular references.
 
 3. Garbage Collection Process:
-
 When the reference count of an object drops to zero, the object is immediately deallocated.
 The cycle detector periodically runs to identify and collect objects involved in circular references. It marks and sweeps through these objects, freeing up the memory.
 
 4. gc Module:
-
 The gc module in Python provides functions and utilities related to garbage collection. It allows manual control over the garbage collector, such as enabling or disabling it, running a collection cycle, or inspecting collected objects.
 
 5. Generational Garbage Collection:
-
 Python uses a generational garbage collection strategy, dividing objects into three generations (young, middle-aged, and old).
 New objects are initially allocated in the young generation. Objects that survive one or more garbage collection cycles are promoted to older generations.
 The idea is that most objects die young, so collecting frequently in the young generation is more efficient.
-__del__ Method:
 
+6. __del__ Method:
 Python provides the __del__ method that allows objects to define custom cleanup actions when they are about to be destroyed. However, relying on __del__ is generally discouraged due to its unpredictable timing and potential issues with reference cycles.
+
 It's important to note that, in most cases, Python's automatic garbage collection works seamlessly without the need for manual intervention. Developers typically do not need to worry about memory management details, and Python takes care of memory cleanup in the background.
 
 
