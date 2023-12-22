@@ -55,7 +55,7 @@ Readability vs. Flexibility: While __slots__ can optimize memory usage, it may r
 
 # How does garbage collection happen in python?
 
-Garbage collection in Python is the process by which the interpreter automatically reclaims memory that is no longer in use by the program. Python employs a garbage collector to manage memory and avoid memory leaks. The primary mechanism for garbage collection in Python is based on a technique called **reference counting, along with a **cycle detector to handle reference cycles.
+Garbage collection in Python is the process by which the interpreter automatically reclaims memory that is no longer in use by the program. Python employs a garbage collector to manage memory and avoid memory leaks. The primary mechanism for garbage collection in Python is based on a technique called **Reference counting** , along with a **Cycle detector** to handle reference cycles.
 
 Here's an overview of how garbage collection works in Python:
 
