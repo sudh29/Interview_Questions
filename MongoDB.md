@@ -114,10 +114,5 @@ MongoDB supports multi-document transactions, allowing multiple operations to be
 
 MongoDB is known for its flexibility, scalability, and ease of use. Its document-oriented data model, support for dynamic schemas, and horizontal scalability through sharding make it well-suited for applications with rapidly changing data requirements, large datasets, and complex data structures.
 
-## Contributing
-
-Feel free to contribute by adding more questions, improving answers, or suggesting edits. Fork this repository, make your changes, and submit a pull request. Your contributions are highly appreciated!
-
-## License
 
 
