@@ -29,6 +29,10 @@ In our toy example, the truck can be substituted for the car because it can perf
 
 Imagine a toy with buttons. If you only want to press one button, you don't need to see all the other buttons. Each type of toy has its set of buttons. If you only need one type of button, you don't have to deal with the ones you don't need
 
+"A class should not be forced to implement interfaces it does not use."
+
+In simpler terms, this principle emphasizes that a class should only be required to implement the methods that are relevant to its behavior and should not be compelled to provide implementations for methods it does not need.
+
 ## D - Dependency Inversion Principle (DIP):
 
 Think of building a tower with blocks. The top block doesn't hold the tower; it depends on the blocks below. Dependency Inversion means the higher-level things depend on the lower-level things. For example, if you have a zoo (higher level), it depends on animals (lower level). You can't have a zoo without animals.
