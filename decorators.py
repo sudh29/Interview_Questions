@@ -19,3 +19,27 @@ def splitter_decorator(function):
 def hello():
    return 'Hello World'
 hello()   # output => [ 'hello' , 'world' ]
+
+
+# with arguments
+
+def repeat_n_times(n):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for _ in range(n):
+                result = func(*args, **kwargs)
+            return result
+        return wrapper
+    return decorator
+
+@repeat_n_times(n=3)
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Equivalent to greet = repeat_n_times(n=3)(greet)
+# Now, calling greet will repeat the greeting three times
+greet("Alice")
+
+# Hello, Alice!
+# Hello, Alice!
+# Hello, Alice!
