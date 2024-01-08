@@ -6,6 +6,22 @@
 
 Prefix sum is a technique used for efficiently calculating the sum of elements in a subarray or subsequence. It involves creating an auxiliary array, where each element at index `i` represents the sum of elements from the beginning of the array up to index `i` (inclusive).
 
+### Steps
+
+1. **Initialize an Array:** Start with an array of elements.
+   arr = [a, b, c, d, e]
+
+
+2. **Create Prefix Sum Array:** Create a new array (prefix sum array) with the same length, where each element at index `i` represents the sum of elements from the beginning up to index `i` in the original array.
+   prefix_sum = [a, a+b, a+b+c, a+b+c+d, a+b+c+d+e]
+
+
+3. **Calculating Sum of Subarray:** To calculate the sum of elements in a subarray `[i, j]` in the original array, you can use the prefix sum array:
+    sum_subarray = prefix_sum[j] - prefix_sum[i-1] # if i > 0, else prefix_sum[j]
+
+
+
+
 ![image](https://github.com/sudh29/Interview_Questions/assets/73557822/816eeb07-ea32-462c-912c-bbfdc839c2ae)
 
 
