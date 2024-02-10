@@ -222,6 +222,10 @@ expected_length = 10
 test_array_length(ans, expected_length)
 
 Q12:
+Puzzle
+
+Q13:
+Puzzle
 
 
 
