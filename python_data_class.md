@@ -35,6 +35,21 @@ Let's consider a simple example of a `Person` class with attributes such as `nam
 Here's how we can define the `Person` class using `dataclasses`:
 
 ```python
+class Person:
+    def __init__(self, name, age, city):
+        self.name = name
+        self.age = age
+        self.city = city
+
+    def __repr__(self):
+        return f"Person(name={self.name}, age={self.age}, city={self.city})"
+
+    def __eq__(self, other):
+        if not isinstance(other, Person):
+            return False
+        return (self.name, self.age, self.city) == (other.name, other.age, other.city)
+
+
 from dataclasses import dataclass
 
 @dataclass
