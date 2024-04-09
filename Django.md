@@ -3,9 +3,11 @@
 ## 1. What is Django and what are its main features?
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Its main features include:
-An Object-Relational Mapping (ORM) system for database access
-A templating engine for dynamic HTML generation
-A URL routing system, and a built-in administration interface.
+
+- An Object-Relational Mapping (ORM) system for database access
+- A templating engine for dynamic HTML generation
+- A URL routing system, and a built-in administration interface.
+  
 Django follows the "Don't Repeat Yourself" (DRY) principle and is designed to promote reusability, maintainability, and scalability of web applications.
 
 ## 2. Explain Django's MTV architecture.
