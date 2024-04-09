@@ -11,6 +11,20 @@ else:
 # fibonacci series
 # 0,1,1,2,3,5,8,13
 
+def fibonacci(n):
+    fib_series = [0, 1]
+    while len(fib_series) < n:
+        fib_series.append(fib_series[-1] + fib_series[-2])
+    return fib_series[:n]
+
+def fibonacci(n):
+    if n <= 1:
+        return [0] if n == 0 else [0, 1]
+    else:
+        fib_series = fibonacci(n - 1)
+        fib_series.append(fib_series[-1] + fib_series[-2])
+        return fib_series
+
 d = {"a": {"b": {"c": "hey", "d": {"e": "Bye"}}}}
 
 d = {"a": {"b": {"c": "hey", "d": {"e": "Bye"}}}}
