@@ -134,6 +134,11 @@ module.original_function = new_function
 result = module.original_function()
 print(result)  # Output: "Monkey-patched implementation"
 
+# Monkey patching and Patching
+
+''' Monkey patching is a general programming technique for dynamically modifying or extending code at runtime.
+Patching, in the context of unit testing, refers to the process of replacing objects or functions with mock objects or alternative implementations during testing.
+While monkey patching is a more general technique that can be used for various purposes, patching in unit testing is specifically used for isolating code dependencies during testing.'''
 
 
 
