@@ -83,6 +83,57 @@ Use PUT when you want to completely replace the resource or update it with a new
 Use PATCH when you want to apply partial modifications to the resource, updating only specific fields.
 Both PUT and PATCH methods are idempotent, meaning that multiple identical requests have the same effect as a single request. However, PATCH is more suited for partial updates, while PUT is used for complete replacements.'''
 
+# Mocking:
+'''Mocking involves replacing parts of your code with mock objects that simulate the behavior of real objects. Mock objects can be configured to return specific values, raise exceptions, or have custom behavior.'''
+
+from unittest.mock import Mock
+
+# Create a mock object
+mock_obj = Mock()
+# Configure the mock object to return a specific value
+mock_obj.method.return_value = 42
+
+# Use the mock object
+result = mock_obj.method()
+print(result)  # Output: 42
+
+# Patching:
+'''Patching is a specific form of mocking that replaces objects or functions in a module with mock objects during the execution of a test. It's commonly used to replace dependencies of the code being tested with mock objects.'''
+
+from unittest import TestCase, mock
+from mymodule import function_to_test
+
+class MyTestCase(TestCase):
+
+    @mock.patch('mymodule.dependency')
+    def test_function_to_test(self, mock_dependency):
+        # Configure the mock dependency
+        mock_dependency.return_value = 42
+
+        # Call the function being tested
+        result = function_to_test()
+
+        # Assert that the function behaves as expected
+        self.assertEqual(result, 42)
+
+'''Monkey patching is a technique used in software development to dynamically modify or extend code at runtime. It involves altering or replacing parts of a program's code, typically functions or methods, with alternative implementations.'''
+
+# Original module code
+def original_function():
+    return "Original implementation"
+
+# Monkey patching: Replace original_function with a new implementation
+def new_function():
+    return "Monkey-patched implementation"
+
+# Applying the patch
+import module
+module.original_function = new_function
+
+# Now calling original_function will execute the monkey-patched implementation
+result = module.original_function()
+print(result)  # Output: "Monkey-patched implementation"
+
 
 
 
