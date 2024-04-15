@@ -150,6 +150,96 @@ testing.
 While monkey patching is a more general technique that can be used for various purposes, patching in unit testing is specifically used for isolating 
 code dependencies during testing.'''
 
+# By Reference or By Value
+'''
+In Python, arguments are passed by object reference. This means that when you pass a variable to a function, you are actually passing a reference to the
+object that the variable refers to, not a copy of the object itself.
+
+Passing by Object Reference:
+When you pass an immutable object (e.g., integers, strings, tuples) to a function, changes made to the object inside the function will not affect the original object.
+When you pass a mutable object (e.g., lists, dictionaries, sets) to a function, changes made to the object inside the function will affect the original object.
+'''
+def modify_list(lst):
+    lst.append(4)  # This will modify the original list
+
+def modify_int(num):
+    num = num + 1  # This will not modify the original integer
+
+my_list = [1, 2, 3]
+modify_list(my_list)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+my_num = 5
+modify_int(my_num)
+print(my_num)   # Output: 5
+
+'''
+In the example above:
+modify_list modifies the original list, demonstrating that lists are mutable and changes made inside the function affect the original list.
+modify_int increments the value of num by 1, but it doesn't affect the original integer. This is because integers are immutable, and reassigning num inside
+the function creates a new integer object.
+
+In summary, while Python does not pass arguments by reference in the traditional sense, it passes them by object reference, meaning that changes to
+mutable objects passed to functions can affect the original objects, while changes to immutable objects do not.'''
+
+# Method overloading and Method overriding
+
+'''
+Method Overloading:
+Method overloading refers to defining multiple methods in a class with the same name but different parameters or argument lists. The behavior of the method 
+is determined by the number or type of arguments passed to it. However, Python does not support method overloading in the traditional sense like some 
+other programming languages such as Java or C++.
+
+Instead, you can achieve a form of method overloading in Python by using default parameter values or variable-length argument lists (*args and **kwargs).
+This allows a single method to handle different argument types or numbers.'''
+
+class MyClass:
+    def my_method(self, a, b=None):
+        if b is None:
+            # handle the case when only 'a' is passed
+            print(a)
+        else:
+            # handle the case when both 'a' and 'b' are passed
+            print(a, b)
+
+obj = MyClass()
+obj.my_method(1)        # Output: 1
+obj.my_method(1, 2)     # Output: 1 2
+
+'''
+Method Overriding:
+Method overriding refers to defining a method in a subclass that has the same name as a method in the superclass. The method in the subclass overrides the
+method in the superclass, and the behavior of the overridden method is specific to the subclass.'''
+
+class Animal:
+    def make_sound(self):
+        print("Generic animal sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Bark")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Meow")
+
+dog = Dog()
+cat = Cat()
+
+dog.make_sound()  # Output: Bark
+cat.make_sound()  # Output: Meow
+
+'''
+In summary, while Python does not support method overloading in the traditional sense, you can achieve similar functionality using default parameters
+or variable-length argument lists. Method overriding, on the other hand, is supported in Python and allows subclasses to provide their own implementations
+of methods defined in the superclass.'''
+
+
+
+
+
+
+
 
 
 
