@@ -234,6 +234,11 @@ In summary, while Python does not support method overloading in the traditional 
 or variable-length argument lists. Method overriding, on the other hand, is supported in Python and allows subclasses to provide their own implementations
 of methods defined in the superclass.'''
 
+'''
+MRO defines the order in which Python searches for methods and attributes in classes and their superclasses, and it is determined by the
+C3 linearization algorithm in Python 3. Understanding MRO is crucial for understanding how method resolution works in Python's class hierarchy, 
+especially in the context of multiple inheritance.'''
+
 
 
 
