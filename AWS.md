@@ -30,3 +30,23 @@ for extensive Infrastructure investments.
 - Agility: Rapid provisioning and deployment of resources enable faster time-to-market and innovation.
 - Reliability: Redundant infrastructure and data replication enhance reliability and disaster recovery capabilities.
 
+# AWS EC2
+
+1. **Virtual Servers**: EC2 provides resizable compute capacity in the cloud, allowing users to launch virtual servers (called instances) based on their specific requirements.
+
+2. **Instance Types**: AWS offers a wide range of instance types optimized for different use cases, including general-purpose, compute-optimized, memory-optimized, storage-optimized, and GPU instances.
+
+3. **Operating Systems**: EC2 supports various operating systems, including Amazon Linux, Ubuntu, Windows Server, Red Hat Enterprise Linux, and others, allowing users to choose the environment that best suits their needs.
+
+4. **Elasticity and Scaling**:
+   - Elasticity: EC2 instances can be scaled up or down dynamically to accommodate changes in demand, ensuring optimal performance and cost efficiency.
+   - Auto Scaling: Auto Scaling automatically adjusts the number of EC2 instances based on user-defined policies, maintaining application availability and optimizing resource utilization.
+
+5. **Security**: EC2 provides various security features, including security groups (firewalls) and key pairs (SSH keys or passwords) to control access to instances. Users can also leverage AWS Identity and Access Management (IAM) to manage user permissions.
+
+6. **Integration**: EC2 integrates seamlessly with other AWS services, such as Elastic Block Store (EBS) for persistent block storage, Amazon S3 for object storage, and Amazon VPC for networking, enabling users to build scalable and resilient applications.
+
+7. **Pricing**: EC2 follows a pay-as-you-go pricing model, where users are billed based on the instance type, usage duration, and additional resources (e.g., storage, data transfer) consumed. AWS offers various pricing options, including On-Demand Instances, Reserved Instances, and Spot Instances.
+
+8. **Use Cases**: EC2 is suitable for a wide range of use cases, including web hosting, application development and testing, data processing, high-performance computing (HPC), machine learning, and more.
+
