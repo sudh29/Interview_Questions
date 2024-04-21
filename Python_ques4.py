@@ -287,13 +287,6 @@ It includes information about the types of objects, their attributes, and their 
 Although Python code is not compiled to machine code like languages such as C or C++, Python does undergo a form of compilation known as bytecode 
 compilation. When you run a Python script or import a module, the Python interpreter first parses the source code into an intermediate representation
 called bytecode. This bytecode is then executed by the Python virtual machine (PVM).
-When Python bytecode is generated for the first time, it's stored in files with a .pyc extension (compiled Python files). These .pyc files contain 
-the bytecode version of the corresponding .py source files. The bytecode files are created to speed up subsequent executions of the same Python script
-or module.
-
-Although Python code is not compiled to machine code like languages such as C or C++, Python does undergo a form of compilation known as bytecode 
-compilation. When you run a Python script or import a module, the Python interpreter first parses the source code into an intermediate representation
-called bytecode. This bytecode is then executed by the Python virtual machine (PVM).
 
 When Python bytecode is generated for the first time, it's stored in files with a .pyc extension (compiled Python files). These .pyc files contain the
 bytecode version of the corresponding .py source files. The bytecode files are created to speed up subsequent executions of the same Python script or
