@@ -1,3 +1,13 @@
+def second_smallest(numbers):
+    m1 = m2 = float('inf')
+    for x in numbers:
+        if x <= m1:
+            m1, m2 = x, m1
+        elif x < m2:
+            m2 = x
+    return m2
+
+
 # Take sum of list using lambda fn.
 from functools import reduce
 new=[1,2,3,4,5]
