@@ -351,6 +351,26 @@ In summary, iterators are objects used for traversing sequences of data, while g
 on-the-fly. Generators provide a more concise and memory-efficient way to create iterators, especially for large or infinite sequences of data.
 '''
 
+# MVT vs MVC
+
+'''
+
+The terms "MVT" and "MVC" are often used in the context of software architecture and design patterns, particularly in web development.
+
+MVT (Model-View-Template):
+MVT is a pattern used primarily in web frameworks like Django (Python) and AngularJS (JavaScript).
+In MVT, the flow of control in a web application is controlled by the framework.
+The Model represents the data and business logic, the View is responsible for rendering the user interface, and the Template is used to generate dynamic
+content.
+In this pattern, the Template layer is responsible for how the data is presented to the user, similar to the View layer in MVC.
+
+MVC (Model-View-Controller):
+MVC is a pattern used in various programming languages and frameworks, including Ruby on Rails, ASP.NET MVC, and Spring MVC.
+In MVC, the Model represents the data and business logic, the View represents the user interface, and the Controller handles user input and updates the Model 
+and View accordingly.
+The Controller acts as an intermediary between the Model and View, handling user interactions and updating the Model as necessary.
+The View is responsible for presenting data to the user, and the Model represents the underlying data and business rules.
+'''
 
 
 
