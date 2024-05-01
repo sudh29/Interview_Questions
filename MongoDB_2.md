@@ -65,12 +65,16 @@ result = collection.find(query)
 
 ### Update a document by setting a value to a field
 query = {'_id': ObjectId('document_id')}
+
 update = {'$set': {'field': 'new_value'}}
+
 collection.update_one(query, update)
 
 ### Increment the value of a field in a document
 query = {'_id': ObjectId('document_id')}
+
 update = {'$inc': {'field': 5}}
+
 collection.update_one(query, update)
 
 
