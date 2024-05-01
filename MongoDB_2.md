@@ -11,6 +11,7 @@
 
 ### Find documents where the 'field' is not equal to 'value'
 query = {'field': {'$ne': 'value'}}
+
 result = collection.find(query)
 
 ## Logical Operators:
@@ -22,6 +23,7 @@ result = collection.find(query)
 
 ### Find documents where both conditions are true
 query = {'$and': [{'field1': 'value1'}, {'field2': 'value2'}]}
+
 result = collection.find(query)
 
 
@@ -39,6 +41,7 @@ Array Operators:
 
 ### Find documents where the 'field' matches any value in the given list
 query = {'field': {'$in': ['value1', 'value2']}}
+
 result = collection.find(query)
 
 ## Evaluation Operators:
