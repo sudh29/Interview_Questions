@@ -26,10 +26,6 @@ Django ORM (Object-Relational Mapping) is a feature that enables developers to i
 
 Django provides a forms framework that simplifies the process of handling HTML forms in web applications. Developers can define forms using Python classes, and Django takes care of rendering the HTML form, validating user input, and processing form submissions. This helps in reducing boilerplate code and ensuring security.
 
-## 5. Explain Django's middleware.
-
-Django middleware is a way to process requests globally before they reach the view or after the view has processed the request. Middleware components are defined in the `MIDDLEWARE` setting and can perform tasks such as authentication, security checks, or modifying the response. They provide a mechanism for extending and modifying Django's request/response processing pipeline.
-
 ## 6. What is Django REST framework?
 
 Django REST framework is a powerful and flexible toolkit for building Web APIs in Django applications. It provides tools for serializing and deserializing complex data types, authenticating users, handling permissions, and more. It extends Django's capabilities to handle the unique requirements of building RESTful APIs.
