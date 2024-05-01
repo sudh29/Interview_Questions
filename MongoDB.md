@@ -1,6 +1,4 @@
-# MongoDB Interview Preparation
-
-This repository contains common questions and answers related to MongoDB for interview preparation. Whether you're getting ready for a job interview or just looking to enhance your MongoDB knowledge, these questions cover key concepts that are often discussed in MongoDB interviews.
+# MongoDB 
 
 ## Table of Contents
 
