@@ -1,21 +1,5 @@
 # MongoDB 
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [What is MongoDB?](#what-is-mongodb)
-3. [BSON in MongoDB](#bson-in-mongodb)
-4. [Document in MongoDB](#document-in-mongodb)
-5. [Collection in MongoDB](#collection-in-mongodb)
-6. [Indexing in MongoDB](#indexing-in-mongodb)
-7. [Sharding in MongoDB](#sharding-in-mongodb)
-8. [Replication vs. Sharding](#replication-vs-sharding)
-9. [Write Concern](#write-concern-in-mongodb)
-10. [Transactions in MongoDB](#transactions-in-mongodb)
-11. [Key Features](#key-features-of-mongodb)
-12. [Contributing](#contributing)
-13. [License](#license)
-
 ## Introduction
 
 This repository aims to help individuals prepare for MongoDB-related interviews by providing a set of questions and their corresponding answers. MongoDB is a widely used NoSQL database, and understanding its key concepts is crucial for working with the database effectively.
