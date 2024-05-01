@@ -1,5 +1,4 @@
 
-Hello Rushikesh, Good Afternoon,
 
 ✅ Regarding Self Introduction and DevOps:
 
