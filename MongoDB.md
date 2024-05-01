@@ -1,9 +1,5 @@
 # MongoDB 
 
-## Introduction
-
-This repository aims to help individuals prepare for MongoDB-related interviews by providing a set of questions and their corresponding answers. MongoDB is a widely used NoSQL database, and understanding its key concepts is crucial for working with the database effectively.
-
 ## What is MongoDB?
 
 MongoDB is a NoSQL, document-oriented database that stores data in flexible, JSON-like BSON documents. It differs from traditional relational databases by not requiring a predefined schema, offering scalability and adaptability to changing data requirements.
