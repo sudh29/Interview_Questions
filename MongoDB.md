@@ -31,15 +31,16 @@ Indexed Fields:
 
 Indexes are created on specific fields in a document.
 Commonly indexed fields include those used in queries, sorting, and often in the find() method.
+
 Types of Indexes:
 
 Single Field Index: Created on a single field.
-Compound Index: Created on multiple fields. The order of fields in a compound index can affect query performance.
-Multikey Index: Created on fields that hold arrays. MongoDB creates separate index entries for each element of the array.
-Default Index:
 
-MongoDB automatically creates an index on the _id field, which is the primary key.
-This index is unique and ensures fast retrieval of documents by their _id values.
+Compound Index: Created on multiple fields. The order of fields in a compound index can affect query performance.
+
+Multikey Index: Created on fields that hold arrays. MongoDB creates separate index entries for each element of the array.
+
+Default Index: MongoDB automatically creates an index on the _id field, which is the primary key. This index is unique and ensures fast retrieval of documents by their _id values.
 
 #### Advantages of Indexing:
 Improved Query Performance:
