@@ -238,4 +238,39 @@ Q13:
 Puzzle
 
 
+Q14: 
+There are 3 baskets. one of them have apples, one has oranges only and the other has mixture of apples and oranges. The labels on their baskets always lie.
+(i.e. if the label says oranges, you are sure that it doesn't have oranges only,it could be a mixture) The task is to pick one basket and pick only one
+fruit from it and then correctly label all the three baskets.
+
+A,  0,	M
+ 
+M,  A,	0	
+
+Ans -  Pick from mix label one
+
+Q15:
+You have 8 balls. One of them is defective and weighs less than others. You have a balance to measure balls against each other.
+In 2 weighings how do you find the defective one?
+
+Ans - 
+Case 1. First put aside 2 balls. From remaining 6, put 3-3 on each side. 
+If they weigh unequal, select the side which weighs less. Remove 1 ball from that. 
+Put 1-1 on each side. If they weigh equal, the one in your hand is the defective ball. 
+Otherwise, the side which weighs less has the defective ball. 
+
+Case 2. If 3-3 balls weigh equal, take another two balls and put 1-1 on each side. Whichever weighs less, is the defective ball.
+
+Q16:
+You have 5 jars of pills. Each pill weighs 10 gram, except for contaminated pills contained in one jar, where each pill weighs 9 gm. 
+Given a scale, how could you tell which jar had the contaminated pills in just one measurement?
+
+Ans - 
+Step 1: Take out 1 pill from jar 1, 2 pills from jar 2, 3 pills from jar 3, 4 pills from jar 4 and 5 pills from jar 5.
+Step 2: Put all these 15 pills on the scale. The correct weight is 150 (15*10). But one of the jars has contaminated pills. 
+So the weight will definitely be less than 150.
+Step 3: If the weight is 149 then jar 1 has contaminated pills because there is only one contaminated pill. If the weight is 148 then jar 2,
+if the weight is 147 then jar 3, if 146 then jar 4, if 145 then jar 5.
+
+
 
