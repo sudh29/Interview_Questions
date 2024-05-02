@@ -1,4 +1,5 @@
-Q1 Write a Program to combine two different dictionaries. While combining, if you find the same keys, you can add the values of these same keys. Output the new dictionary
+Q1 Write a Program to combine two different dictionaries. While combining, if you find the same keys, you can add the values of these same keys. 
+Output the new dictionary
 
 Ans:
 d1 = {'key1': 50, 'key2': 100, 'key3':200}
@@ -19,7 +20,8 @@ for k,v in d2.items():
 		
 print(d3)
 
-Q2: Given an array A[] consisting of only 0s, 1s, and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
+Q2: Given an array A[] consisting of only 0s, 1s, and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first,
+then all 1s and all 2s in last.
  
 Input: {0, 1, 2, 0, 1, 2}
 Output: {0, 0, 1, 1, 2, 2}
@@ -134,7 +136,8 @@ sum = num1 + num2
 print('The sum of the numbers is', sum)		'1510'
 
 
-Q6: Given N eggs and K floors, the task is to find the minimum number of trials needed, in the worst case, to find the floor below which all floors are safe. A floor is safe if dropping an egg from it does not break the egg. Please refer n eggs and k floors for more insight
+Q6: Given N eggs and K floors, the task is to find the minimum number of trials needed, in the worst case, to find the floor below which all floors are safe.
+A floor is safe if dropping an egg from it does not break the egg. Please refer n eggs and k floors for more insight
 n=2
 floors=10
 Ans: 4
