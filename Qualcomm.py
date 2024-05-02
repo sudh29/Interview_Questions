@@ -331,5 +331,14 @@ It performs lexical analysis, syntax analysis, optimization, and code generation
 instructions and executes them in real-time. Commonly used for dynamically-typed languages like Python, JavaScript, Ruby, and PHP. Examples include 
 CPython, Node.js, Ruby MRI, and PHP interpreter.
 
+Q20: Reverse sentence
+Ans:
+ip = "i work for Qualcomm"
+# op = "Qualcomm for work i"
 
+ip_list = ip.split(' ')
+n=len(ip_list)
+op_list = [ip_list[i] for i in range(n-1,-1,-1)]
+op = ' '.join(op_list)
+print(op)
 
