@@ -222,6 +222,15 @@ expected_length = 10
 
 test_array_length(ans, expected_length)
 
+import unittest
+
+class TestArrFunction(unittest.TestCase):
+    def test_arr_len(self):
+        self.assertEqual(len(ans), 10)
+        
+test_obj = TestArrFunction()
+test_obj.test_arr_len()
+
 Q12:
 Puzzle
 
