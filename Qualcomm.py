@@ -342,3 +342,14 @@ op_list = [ip_list[i] for i in range(n-1,-1,-1)]
 op = ' '.join(op_list)
 print(op)
 
+Q21: Reverse using stack: LIFO
+Ans:
+ip = 'Reverse'
+stack = []
+for i in ip:
+    stack.append(i)
+op = ''
+while len(stack)>0:
+    op+= stack.pop()
+print(op)
+
