@@ -353,3 +353,33 @@ while len(stack)>0:
     op+= stack.pop()
 print(op)
 
+Q22: Merge two sorted array
+Ans:
+arr1= [1,3,10,15,40,60,70]
+arr2= [10, 24, 34, 45]
+
+def merge_sorted_array(arr1,arr2,n,m):
+    i=0
+    j=0
+    op = []
+    while (i<n and j<m):
+        if arr1[i]<arr2[j]:
+            op.append(arr1[i])
+            i+=1
+        else:
+            op.append(arr2[j])
+            j+=1
+    
+    while (i<n):
+        op.append(arr1[i])
+        i+=1   
+
+    while (j<m):
+        op.append(arr12[j])
+        j+=1
+    return op
+    
+res = merge_sorted_array(arr1,arr2,len(arr1),len(arr2))
+print(res)
+
+Q23:
