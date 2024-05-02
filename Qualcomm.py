@@ -272,5 +272,19 @@ So the weight will definitely be less than 150.
 Step 3: If the weight is 149 then jar 1 has contaminated pills because there is only one contaminated pill. If the weight is 148 then jar 2,
 if the weight is 147 then jar 3, if 146 then jar 4, if 145 then jar 5.
 
+Q17: Write a program (recursive) to print given number in binary format.
+Ans:
+def decimal_to_binary(n,arr):
+    if n > 1:
+        decimal_to_binary(n // 2,arr)
+    arr.append(str(n % 2))
+
+# Example usage
+decimal_number = 10
+print(f"Binary representation of {decimal_number}: ", end='')
+ans = []
+decimal_to_binary(decimal_number,ans)
+print(''.join(ans))
+
 
 
