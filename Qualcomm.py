@@ -54,16 +54,13 @@ low = 0
 high = arr_size - 1
 mid = 0
 while mid <= high:
-    if arr[mid] == 2:
+    if arr[mid] == 1:
+        mid = mid + 1
+    elif arr[mid] == 2:
         arr[mid], arr[high] = arr[high], arr[mid]
         high = high - 1
-        # low = low + 1
-        # mid = mid + 1
-    elif arr[mid] == 1:
-        mid = mid + 1
     else:
         arr[low], arr[mid] = arr[mid], arr[low]
-        # high = high - 1
         low = low + 1
         mid = mid+1
 print(arr)
