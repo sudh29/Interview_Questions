@@ -315,3 +315,21 @@ array3 = ['a', 'b', 'c', 'a', 'a', 'b']
 array4 = ['b', 'a', 'a', 'c', 'b']
 print(compare_alphabet_arrays(array3, array4))  # Output: False
 
+Q19: Difference between Online IDE, Code Editor, Compiler, Interpreter
+Ans:
+* Online IDE (Integrated Development Environment): A comprehensive web-based software development environment with code editing, compilation,
+debugging, and other tools integrated into a single platform, accessible via a web browser. Examples include Replit, CodePen, and JSFiddle.
+
+* Code Editor: A software tool for writing and editing code, offering features like syntax highlighting, code completion, and automatic indentation.
+It focuses solely on code editing functionality without built-in support for compilation or debugging. Examples include Visual Studio Code, Sublime
+Text, Atom, and Vim.
+
+* Compiler: A software tool that translates high-level source code into machine code or bytecode for execution by a computer's processor.
+It performs lexical analysis, syntax analysis, optimization, and code generation. Examples include GCC, Clang, and javac.
+
+* Interpreter: A software tool that executes source code line by line without prior compilation. It translates code into machine-understandable
+instructions and executes them in real-time. Commonly used for dynamically-typed languages like Python, JavaScript, Ruby, and PHP. Examples include 
+CPython, Node.js, Ruby MRI, and PHP interpreter.
+
+
+
