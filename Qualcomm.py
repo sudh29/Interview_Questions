@@ -382,4 +382,71 @@ def merge_sorted_array(arr1,arr2,n,m):
 res = merge_sorted_array(arr1,arr2,len(arr1),len(arr2))
 print(res)
 
-Q23:
+Q23: Find index of first non repeating element in char array arr=[a,c,d,b,c,b,a]
+Ans:
+def first_non_repeating_index(arr):
+    char_count = {}
+    for i, char in enumerate(arr):
+        char_count[char] = char_count.get(char,0)+1
+    for i in range(len(arr)):
+        if char_count.get(arr[i])==1:
+            return i
+    return -1
+# Example usage
+arr = ['a', 'c', 'd', 'b', 'c', 'b', 'a']
+print("Index of the first non-repeating element:", first_non_repeating_index(arr))
+
+Q24: Max sum subarray
+Ans:
+def max_subarray_sum(arr):
+    max_ending_here = max_so_far = arr[0]
+    
+    for num in arr[1:]:
+        max_ending_here = max(num, max_ending_here + num)
+        max_so_far = max(max_so_far, max_ending_here)
+    
+    return max_so_far
+
+# Example usage
+arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+print("Maximum sum of subarray:", max_subarray_sum(arr))
+
+Q25: Mean, mode, meadian, and variance of (1 2.3. 4.5 ......  99).
+Ans:
+import numpy as np
+from scipy import stats
+
+# Define the sequence from 1 to 99
+sequence = np.arange(1, 100)
+# Mean calculation
+mean = np.mean(sequence)
+# Mode calculation
+mode = stats.mode(sequence).mode[0]
+# Median calculation
+median = np.median(sequence)
+# Variance calculation
+variance = np.var(sequence)
+
+# Print the results
+print("Mean:", mean)
+print("Mode:", mode)
+print("Median:", median)
+print("Variance:", variance)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
