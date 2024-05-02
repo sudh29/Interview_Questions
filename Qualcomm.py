@@ -286,5 +286,32 @@ ans = []
 decimal_to_binary(decimal_number,ans)
 print(''.join(ans))
 
+Q18: Compare two large array of alphabets and return true if each alphabet has same frequency in both the arrays, else false.
+Ans:
 
+from collections import Counter
+
+def compare_alphabet_arrays(arr1, arr2):
+    # freq1 = Counter(arr1)
+    # freq2 = Counter(arr2)
+    
+    freq1 = {}
+    for i in arr1:
+        freq1[i] = freq1.get(i,0)+1
+    freq2 = {}
+    for i in arr2:
+        freq2[i] = freq2.get(i,0)+1
+    
+    
+    # Check if the frequencies of all alphabets are the same in both arrays
+    return freq1 == freq2
+
+# Example usage
+array1 = ['a', 'b', 'c', 'a', 'a', 'b']
+array2 = ['b', 'a', 'a', 'c', 'b', 'a']
+print(compare_alphabet_arrays(array1, array2))  # Output: True
+
+array3 = ['a', 'b', 'c', 'a', 'a', 'b']
+array4 = ['b', 'a', 'a', 'c', 'b']
+print(compare_alphabet_arrays(array3, array4))  # Output: False
 
