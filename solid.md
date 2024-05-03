@@ -2,14 +2,20 @@
 
 ## S - Single Responsibility Principle (SRP):
 
+### Class should do one task.
+
 Imagine you have a robot. The robot's job is to paint, not to cook or sing. Single Responsibility means each robot (or class) should have one main job, just like your toys do one thing really well.
 EX - Imagine you have a toy that is a dog. The dog's main job is to bark. If you want a toy that meows, you get a cat toy. Each toy has a single responsibility—dog for barking, cat for meowing.
 
 ## O - Open/Closed Principle (OCP):
 
+### Class should be extended, not modified.
+
 Think of a box of animal toys. Once you close the box, you don't need to change the toys inside. If you want a new animal, you just add it outside the box. The closed box (old code) doesn't change; you add new things without touching the old ones.
 
 ## L - Liskov Substitution Principle (LSP):
+
+### Child class must be able to replace their super/parent class.
 
 Imagine you have a bunch of toy cars, and you can make them go forward by pushing a button. Now, let's say you have a big toy truck. According to the Liskov Substitution Principle, you should be able to use the truck in place of a car without causing any problems.
 Here's how it works:
@@ -27,6 +33,8 @@ In our toy example, the truck can be substituted for the car because it can perf
 
 ## I - Interface Segregation Principle (ISP):
 
+### Interface should be small, and the class should not implement unnecessary methods.
+
 Imagine a toy with buttons. If you only want to press one button, you don't need to see all the other buttons. Each type of toy has its set of buttons. If you only need one type of button, you don't have to deal with the ones you don't need
 
 "A class should not be forced to implement interfaces it does not use."
@@ -34,6 +42,8 @@ Imagine a toy with buttons. If you only want to press one button, you don't need
 In simpler terms, this principle emphasizes that a class should only be required to implement the methods that are relevant to its behavior and should not be compelled to provide implementations for methods it does not need.
 
 ## D - Dependency Inversion Principle (DIP):
+
+### Dependency is reversed; high-level components are free of low-level components.
 
 Think of building a tower with blocks. The top block doesn't hold the tower; it depends on the blocks below. Dependency Inversion means the higher-level things depend on the lower-level things. For example, if you have a zoo (higher level), it depends on animals (lower level). You can't have a zoo without animals.
 
