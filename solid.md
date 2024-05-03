@@ -45,6 +45,33 @@ In simpler terms, this principle emphasizes that a class should only be required
 
 ### Dependency is reversed; high-level components are free of low-level components.
 
-Think of building a tower with blocks. The top block doesn't hold the tower; it depends on the blocks below. Dependency Inversion means the higher-level things depend on the lower-level things. For example, if you have a zoo (higher level), it depends on animals (lower level). You can't have a zoo without animals.
+"A. High-level modules should not depend on low-level modules. Both should depend on abstractions. 
+ B. Abstractions should not depend on details. Details should depend on abstractions."
+
+ ```python
+# Abstraction (interface)
+class Messenger:
+    def send_message(self, message):
+        pass
+
+# Low-level module
+class EmailMessenger(Messenger):
+    def send_message(self, message):
+        print("Sending email:", message)
+
+# High-level module
+class NotificationService:
+    def __init__(self, messenger):
+        self.messenger = messenger
+    
+    def send_notification(self, message):
+        self.messenger.send_message(message)
+
+# Usage
+email_messenger = EmailMessenger()
+notification_service = NotificationService(email_messenger)
+notification_service.send_notification("Hello, world!")
+
+```
 
 So, SOLID is like having toys with clear roles, not changing old toys when you add new ones, making big toys do what small toys do, having only the buttons you need, and building things where each part depends on the right things below it.
