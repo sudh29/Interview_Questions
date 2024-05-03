@@ -139,6 +139,15 @@ n=2
 floors=10
 Ans: 4
 
+Floors = 100
+
+Linear approach -- 100 takes worst case
+Binary approach -- 50 takes worst case
+Divide and conquer approach -- 19 takes worst case (take floor like 10,20,30...)
+Balancing to linear drop approach -- 
+
+
+
 Q7: Git Commands
 Ans: 
 git init
