@@ -145,6 +145,7 @@ Linear approach -- 100 takes worst case
 Binary approach -- 50 takes worst case
 Divide and conquer approach -- 19 takes worst case (take floor like 10,20,30...)
 Balancing to linear drop approach -- 
+![image](https://github.com/sudh29/Interview_Questions/assets/73557822/510932cd-9490-4c77-97d5-d6b0ff662db5)
 
 
 
