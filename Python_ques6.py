@@ -67,3 +67,24 @@ and calls its quack method. Even though duck and person are instances of differe
 because they both have the necessary quack method. This demonstrates the principle of duck typing in Python.
 '''
 
+# CAP
+'''
+The CAP theorem, also known as Brewer's theorem, states that in a distributed computer system, it is impossible to simultaneously guarantee all of the
+following three properties:
+
+Consistency: Every read receives the most recent write or an error. In other words, all nodes in the system have the same data at the same time.
+
+Availability: Every request receives a response, without guarantee that it contains the most recent write. In other words, the system continues
+to operate even if some nodes fail.
+
+Partition tolerance: The system continues to operate despite arbitrary message loss or failure of part of the system.
+
+The CAP theorem implies that in the presence of a network partition (i.e., when some nodes are isolated from each other), a distributed system 
+can either maintain consistency or availability, but not both simultaneously. It's important to note that the CAP theorem doesn't imply that you 
+must choose only two out of the three properties; rather, it states that in the presence of network partitions, you must prioritize between consistency 
+and availability.
+
+In real-world scenarios, distributed systems often opt for partition tolerance and make trade-offs between consistency and availability based on
+the specific requirements of the application. Different systems may prioritize consistency or availability depending on factors such as the nature 
+3of the data, the use case, and the tolerance for stale or inconsistent data.
+'''
