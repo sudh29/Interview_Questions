@@ -88,3 +88,57 @@ In real-world scenarios, distributed systems often opt for partition tolerance a
 the specific requirements of the application. Different systems may prioritize consistency or availability depending on factors such as the nature 
 3of the data, the use case, and the tolerance for stale or inconsistent data.
 '''
+
+
+class BandwidthManager:
+    '''
+    The BandwidthManager class should have the following methods:
+    __init__(self, max_bandwidth): This constructor should take a parameter max_bandwidth (in Mbps) that represents the maximum allowed bandwidth.
+    monitor_usage(self, data_size): This method should take a parameter data_size (in bytes) that represents the amount of data transferred. It should update the current bandwidth usage and return the current usage as a percentage of the maximum allowed bandwidth.
+    '''
+    
+    def __init__(self, max_bandwidth):
+        self.max_bandwidth = max_bandwidth
+        self.current_bandwidth = 0
+        
+    def monitor_usage(self, data_size):
+        self.current_bandwidth += data_size
+        return (self.current_bandwidth / self.max_bandwidth) * 100
+
+
+class InternetThrottler(BandwidthManager):
+    '''
+    The InternetThrottler class should inherit from BandwidthManager and have the following additional method:
+    throttle(self): This method should be called when the current bandwidth usage exceeds the maximum allowed bandwidth. It should implement a throttling mechanism (e.g., sleep for a certain amount of time) to limit the data transfer rate.
+    '''
+    
+    def throttle(self):
+        if self.current_bandwidth > self.max_bandwidth:
+            print("Throttling in effect")
+        else:
+            print("Not throttling")
+
+
+class NetworkMonitor(BandwidthManager):
+    '''
+    The NetworkMonitor class should also inherit from BandwidthManager and have the following additional method:
+    log_usage(self, usage_percentage): This method should take a parameter usage_percentage (a float representing the current bandwidth usage percentage) and log the usage information to a file or console.
+    '''
+    
+    def log_usage(self, usage_percentage):
+        print(f"Current log_usage usage percentage: {usage_percentage:.2f}%")
+
+# Example usage of the InternetThrottler and NetworkMonitor classes
+network_monitor = NetworkMonitor(1000)
+print("Maximum allowed bandwidth:", network_monitor.max_bandwidth)
+
+for i in range(10):
+    current_usage_percentage = network_monitor.monitor_usage(100)
+    print("Current usage percentage:", current_usage_percentage)
+    network_monitor.log_usage(current_usage_percentage)
+
+internet_throttler = InternetThrottler(1000)
+for i in range(5):
+    current_usage_percentage = internet_throttler.monitor_usage(300)
+    print("Current usage percentage:", current_usage_percentage)
+    internet_throttler.throttle()
